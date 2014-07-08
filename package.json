@@ -1,14 +1,38 @@
 {
   "name": "gulp-coffeekup",
-  "version": "0.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "CoffeeKup plugin for gulp",
+  "author": "Kamei Hiroaki <kmtr@outlook.com>",
+  "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --compilers coffee:coffee-script/register ."
   },
   "keywords": [
-    "gulpplugin"
+    "gulpplugin",
+    "coffeekup"
   ],
-  "author": "",
-  "license": "MIT"
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "coffeekup": "^0.3.0",
+    "gulp-util": "^2.2.0",
+    "through2": "^0.5.0"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.7.1",
+    "mocha": "^1.20.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kmtr/gulp-coffeekup"
+  },
+  "bugs": {
+    "url": "https://github.com/kmtr/gulp-coffeekup/issues"
+  },
+  "homepage": "https://github.com/kmtr/gulp-coffeekup"
 }
