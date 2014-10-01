@@ -1,10 +1,10 @@
 assert = require('assert')
 gutil = require('gulp-util')
-coffeekup = require('./index')
+coffeecup = require('./index')
 
-describe 'gulp-coffeekup', ()->
-  it 'should compile coffeekup to html', (cb)->
-    stream = coffeekup()
+describe 'gulp-coffeecup', ()->
+  it 'should compile coffeecup to html', (cb)->
+    stream = coffeecup()
 
     stream.on 'data', (file)->
       assert.equal file.relative, 'fixture.html'

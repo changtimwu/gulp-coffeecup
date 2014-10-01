@@ -1,8 +1,8 @@
 {
-  "name": "gulp-coffeekup",
+  "name": "gulp-coffeecup",
   "version": "0.0.1",
-  "description": "CoffeeKup plugin for gulp",
-  "author": "Kamei Hiroaki <kmtr@outlook.com>",
+  "description": "CoffeeCup plugin for gulp",
+  "author": "Tim Wu <changtimwu@gmail.com>",
   "license": "MIT",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,8 @@
   },
   "keywords": [
     "gulpplugin",
-    "coffeekup"
+    "coffeekup",
+    "coffeecup"
   ],
   "engines": {
     "node": ">=0.10.0"
@@ -19,7 +20,7 @@
     "index.js"
   ],
   "dependencies": {
-    "coffeekup": "^0.3.0",
+    "coffeecup": "^0.3.21",
     "gulp-util": "^2.2.0",
     "through2": "^0.5.0"
   },
@@ -29,10 +30,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kmtr/gulp-coffeekup"
+    "url": "https://github.com/changtimwu/gulp-coffeecup"
   },
   "bugs": {
-    "url": "https://github.com/kmtr/gulp-coffeekup/issues"
+    "url": "https://github.com/changtimwu/gulp-coffeecup/issues"
   },
-  "homepage": "https://github.com/kmtr/gulp-coffeekup"
+  "homepage": "https://github.com/changtimwu/gulp-coffeecup"
 }
