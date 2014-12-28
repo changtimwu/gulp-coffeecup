@@ -2,10 +2,7 @@ gutil = require('gulp-util')
 through = require('through2')
 ck = require('coffeecup')
 
-gulpCoffeecup = (data, options)->
-  unless options
-    options = data
-    data = {}
+gulpCoffeecup = (options)->
   through.obj (file, enc, cb)->
     if file.isNull()
       @push file
@@ -15,7 +12,7 @@ gulpCoffeecup = (data, options)->
         'Streaming not supported'
       return cb()
     try
-      html = ck.render file.contents.toString(), data, options
+      html = ck.render file.contents.toString(), {}, options
       file.contents = new Buffer(html)
       file.path = gutil.replaceExtension file.path, '.html'
     catch err
